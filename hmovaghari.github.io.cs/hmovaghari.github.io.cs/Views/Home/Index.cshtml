@@ -1,8 +1,237 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    IgnoreBody();
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>حامد موقری - Hamed Movaghari</title>
+    <link rel="stylesheet" href="./contents/fonts.css">
+    <link rel="stylesheet" href="./contents/style.css">
+    <link rel="icon" type="image/x-icon" href="./contents/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Background Animation -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="matrix-text">Hamed Movaghari</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">خانه</a></li>
+                    <li><a href="#about" class="nav-link">درباره</a></li>
+                    <li><a href="#skills" class="nav-link">مهارت‌ها</a></li>
+                    <li><a href="#portfolio" class="nav-link">نمونه کارها</a></li>
+                    <li><a href="#contact" class="nav-link">تماس</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-image">
+                        <img src="./contents/images/hmovaghari.jpg" alt="حامد موقری" id="profile-img">
+                        <div class="matrix-frame"></div>
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="matrix-title">
+                            <span class="typing-effect">حامد موقری</span>
+                        </h1>
+                        <h2 class="subtitle">Desktop and ASP.NET MVC Backend Developer</h2>
+                        <p class="hero-description">
+                            برنامه نویس بک اند با تخصص در Desktop و ASP.NET MVC و SQL Server
+                        </p>
+                        <div class="social-links">
+                            <a href="https://github.com/hmovaghari" target="_blank" class="social-btn">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hamed-movaghari-72a5a830/" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title matrix-text">درباره من</h2>
+                    <div class="matrix-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            برنامه‌نویس بک‌اند با تخصص در تکنولوژی‌های Microsoft و طراحی معماری‌های مقیاس‌پذیر.
+                            تمرکز اصلی من بر ایجاد راه‌حل‌های نوآورانه و کارآمد با ASP.NET MVC و SQL Server است.
+                        </p>
+                        <p>
+                            تخصص من شامل دیباگ و توسعه نرم‌افزارهای حسابداری مالی و اداری یکپارچه
+                            برای شهرک‌های صنعتی می‌باشد. از جمله سیستم‌های حسابداری، خزانه‌داری، انبارداری،
+                            فروش، حقوق و دستمزد، و مدیریت شهرک‌های صنعتی.
+                        </p>
+                        <p>
+                            همواره در تلاش برای یادگیری تکنولوژی‌های نوین و اجرای بهترین شیوه‌های توسعه نرم‌افزار هستم.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title matrix-text">مهارت‌های تکنیکی</h2>
+                    <div class="matrix-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h3>C#</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <h3>ASP.NET MVC</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>SQL Server</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-brands fa-git"></i>
+                        </div>
+                        <h3>Git</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title matrix-text">نمونه کارها</h2>
+                    <div class="matrix-line"></div>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" onclick="openPortfolioModal('virasystem')">
+                        <div class="portfolio-image">
+                            <img src="./contents/images/virasystem.jpg" alt="حسابداری مالی و اداری یکپارچه شهرک‌های صنعتی">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>مشاهده جزئیات</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>حسابداری مالی و اداری یکپارچه شهرک‌های صنعتی</h3>
+                            <p>ASP.NET MVC - WinForm - Entity Framework - Swagger - SQL Server</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card" onclick="openPortfolioModal('personalaccounting')">
+                        <div class="portfolio-image">
+                            <img src="./contents/images/personalaccounting.jpg" alt="حسابداری شخصی">
+                            <div class="portfolio-overlay">
+                                <i class="fas fa-eye"></i>
+                                <span>مشاهده جزئیات</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>حسابداری شخصی</h3>
+                            <p>ASP.NET MVC - WinForm - Entity Framework - SQL Server</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title matrix-text">تماس با من</h2>
+                    <div class="matrix-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/hmovaghari" target="_blank">Github Profile</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/hamed-movaghari-72a5a830/" target="_blank">LinkedIn Profile</a>
+                        </div>
+                        <div id="contact-email">
+                            <form action="https://formspree.io/f/mgegqpar" method="POST" target="_blank">
+                                <p class="matrix-text"><label for="email">Email ایمیل :</label></p>
+                                <input type="email" name="email" id="email" required>
+                                <p class="matrix-text"><label for="message">Message پیام :</label></p>
+                                <textarea name="message" id="message" required></textarea>
+                                <p><button type="submit">Send ارسال</button></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; تمامی حقوق محفوظ است. طراحی و توسعه توسط حامد موقری. 2025</p>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closePortfolioModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="./contents/script.js"></script>
+</body>
+</html>
